@@ -1,0 +1,16 @@
+query getUserProyek{
+  items{
+    user_proyek{
+      status
+      proyeks{
+        judul
+        alamat
+        periode
+        harga_proyek
+        persentase
+        slot
+        dana_terkumpul
+      }
+    }
+  }
+}

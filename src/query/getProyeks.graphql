@@ -1,0 +1,21 @@
+query getProyeks {
+  items{
+    proyek{
+      judul
+      alamat
+      thumbnail
+      deskripsi
+      periode
+      persentase
+      harga_proyek
+      proposal
+      user_proyek(filter:{status: {_eq: "published"}}){
+        id
+      }
+      dana_terkumpul
+      slot
+      status
+      uuid
+    }
+  }
+}
